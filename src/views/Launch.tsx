@@ -6,8 +6,8 @@ import Rocket from "@/assets/svg/rocket";
 
 function Launch() {
   return (
-    <section className="py-6 md:py-12 px-5 md:px-14">
-      <aside className="flex flex-col sm:flex-row items-center justify-between gap-12 border border-primary-foreground p-8 md:p-20 relative">
+    <section className="py-6 md:py-12 px-5 md:px-10">
+      <aside className="flex flex-col sm:flex-row items-center justify-between gap-12 border border-primary-foreground p-8 lg:p-20 relative">
         <div className="flex items-center justify-center">
           <Image
             src={LaunchIllustration}
@@ -23,11 +23,11 @@ function Launch() {
            Apply Here
           </Button>
         </div>
-        <Rocket className="absolute top-2 right-1/2" />
-        <Rocket className="absolute bottom-0 left-0"/>
-        <Rocket className="absolute bottom-2 right-10 rotate-180"/>
-        <Rocket className="absolute top-5 right-4 rotate-45"/>
-        <Rocket className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-50"/>
+        <Rocket className="absolute top-2 right-1/2 -z-10" />
+        <Rocket className="absolute bottom-0 left-0 -z-10"/>
+        <Rocket className="absolute bottom-2 right-10 -z-10 rotate-180"/>
+        <Rocket className="absolute top-5 right-4 rotate-45 -z-10"/>
+        <Rocket className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-50 -z-10"/>
       </aside>
     </section>
   );

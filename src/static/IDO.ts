@@ -7,6 +7,7 @@ const token_info: TokenInfoType = {
 const pool_info: PoolInfoType = {
   min_alloc: 10,
   max_alloc: 100,
+  pool_address: "5NqquHbGYtHysnZWEYTkX7tMQrjsdZJyxSDc1Yc3Mjir",
   access_type: "OPEN ENTRY",
 };
 const idoExample: IDOType = {

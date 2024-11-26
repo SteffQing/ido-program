@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { formatAddress, formatMoney } from "@/lib/utils";
 
 interface Props extends TokenInfoType, PoolInfoType {}
 
@@ -15,9 +16,9 @@ function Info(props: Props) {
         <div className="border border-primary-foreground p-4">
           <Points point="Token Ticker" data={props.symbol} />
           <hr className="border border-primary-foreground my-6" />
-          <Points point="Tokens for Sale" data={props.sale_token_amount} />
+          <Points point="Tokens for Sale" data={formatMoney(props.sale_token_amount)} />
           <hr className="border border-primary-foreground my-6" />
-          <Points point="Token Address" data={props.address} />
+          <Points point="Token Address" data={formatAddress(props.address)} />
           <hr className="border border-primary-foreground my-6" />
           <Points point="Decimals" data={props.decimals} />
         </div>
@@ -36,9 +37,9 @@ function Info(props: Props) {
           <hr className="border border-primary-foreground my-6" />
           <Points point="Maximum Allocation" data={props.max_alloc} />
           <hr className="border border-primary-foreground my-6" />
-          <Points point="Access Type" data={props.access_type} /> 
+          <Points point="Pool Address" data={formatAddress(props.pool_address)} />
           <hr className="border border-primary-foreground my-6" />
-          <Points point="Token Ticker" data={props.symbol} />
+          <Points point="Access Type" data={props.access_type} /> 
         </div>
         <div className="border border-primary-foreground border-t-0 w-[98%] p-1" />
       </div>

@@ -22,5 +22,6 @@ interface TokenInfoType {
 interface PoolInfoType {
     min_alloc: number;
     max_alloc: number;
+    pool_address: string;
     access_type: ACCESS_TYPE;
 }

@@ -1,18 +1,20 @@
+import Image from "next/image";
 import Link from "next/link";
 
 function Footer(){
     return <footer className="border-t border-zinc-800 mt-16">
-    <div className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div className="w-full px-5 py-8 md:p-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="space-y-4">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-[#00FF88] rounded-full" />
-            <span className="text-xl font-bold">GREENDOT</span>
+            <Image src="/logo.svg" alt="logo" width={40} height={40} />
+            <h2 className="text-2xl md:text-3xl font-medium hidden sm:block uppercase font-inter">GreenDot</h2>
           </div>
           <p className="text-gray-400">Discover and Invest in the best Web3 IDOs</p>
           <p className="text-gray-500">Greendot, 2024.</p>
         </div>
-        <div>
+        <aside className="grid gap-8 grid-cols-1 sm:grid-cols-3">
+            <div>
           <h3 className="font-semibold mb-4">Company</h3>
           <div className="space-y-2">
             <Link href="#" className="block text-gray-400 hover:text-[#00FF88]">Blog</Link>
@@ -37,10 +39,12 @@ function Footer(){
             <Link href="#" className="block text-gray-400 hover:text-[#00FF88]">Data Processing</Link>
           </div>
         </div>
+        </aside>
+        
       </div>
-      <div className="mt-8 pt-8 border-t border-zinc-800 flex justify-between items-center">
+      <div className="mt-8 pt-8 border-t border-zinc-800 flex justify-between items-center flex-col sm:flex-row gap-y-3">
         <p className="text-gray-500">© 2024 Greendot Inc. All rights reserved.</p>
-        <div className="flex gap-4">
+        <div className="flex gap-4 max-sm:w-full">
           <Link href="#" className="text-gray-400 hover:text-[#00FF88]">
             <span className="sr-only">Instagram</span>
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">

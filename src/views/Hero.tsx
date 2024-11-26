@@ -4,7 +4,7 @@ import GreenDot from "@/assets/images/green_dot.png";
 
 function Hero() {
   return (
-    <section className="flex min-h-screen justify-center flex-col gap-5 py-12 md:pt-20 px-5 md:px-14 bg-[url('/bg.png')] bg-cover bg-center bg-no-repeat">
+    <section className="flex min-h-screen justify-center flex-col gap-5 py-12 md:pt-20 px-5 md:px-10 bg-[url('/bg.png')] bg-cover bg-center bg-no-repeat">
       <div className="flex w-full items-start gap-2 flex-wrap">
         <Points text="On SOON Network" />
         <Points text="No-Loss IDO Rounds" />
@@ -16,7 +16,7 @@ function Hero() {
               discover and invest in the best web3 projects
             </h1>
             <h2 className="text-xl md:text-3xl font-normal font-inter">
-              Be an early investor in the next generation of blockchain projects with GreenDot
+              Be an early investor in the next generation of blockchain projects on SOON with GreenDot
             </h2>
           </div>
           <div className="flex flex-wrap gap-x-4 gap-y-2 md:gap-10">

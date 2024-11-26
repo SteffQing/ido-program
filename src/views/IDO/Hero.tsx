@@ -1,5 +1,7 @@
 
+import Participate from "@/components/ParticipateIDO";
 import { Button } from "@/components/ui/button";
+import { formatMoney } from "@/lib/utils";
 import Image from "next/image";
 
 interface Props extends Omit<IDOType, "token_info" | "pool_info"> {}
@@ -22,7 +24,7 @@ function Hero(props: Props) {
           <div className="flex flex-col gap-2 p-2 border border-primary-foreground">
             <p className="text-sm md:text-lg font-normal font-inter">Targeted Raise</p>
             <span className="text-base md:text-xl font-semibold text-primary-foreground font-inter">
-              {props.target} USDT
+              {formatMoney(props.target)} USDT
             </span>
           </div>
           <div className="flex flex-col gap-2 p-2 border border-primary-foreground">
@@ -49,7 +51,7 @@ function Hero(props: Props) {
           <div className="w-full h-10 border border-primary-foreground flex justify-between items-center p-2 text-primary-foreground mb-4">
             <p className="uppercase text-sm md:text-base font-normal font-inter">total raised</p>
             <b className="uppercase text-sm md:text-base font-normal font-inter">
-              {props.raised} / {props.target} USDT
+              {formatMoney(props.raised)} / {formatMoney(props.target)} USDT
             </b>
           </div>
           <div className="flex flex-col gap-3 mb-5">
@@ -62,9 +64,7 @@ function Hero(props: Props) {
           </div>
         </div>
         <div>
-            <div className="w-full p-5 bg-[#0C1F11] flex justify-center items-center uppercase border border-primary-foreground text-base md:text-xl font-normal font-inter text-primary-foreground">
-            Connect Wallet
-            </div>
+            <Participate />
             <div className="w-[85%] mx-auto border border-primary-foreground border-t-0 flex justify-between items-center p-[10px] text-primary-foreground">
             <p className="uppercase text-sm md:text-base font-normal font-inter">countdown</p>
             <b className="uppercase text-sm md:text-base font-normal font-inter">

@@ -5,7 +5,7 @@ import Image, { StaticImageData } from "next/image";
 
 function WhyUs() {
   return (
-    <section className="py-6 md:py-12 px-5 md:px-14">
+    <section className="py-6 md:py-12 px-5 md:px-10">
       <Button variant="outline" className="rounded-none bg-secondary border-primary-foreground border-b-0 uppercase">
         Why choose us
       </Button>
@@ -35,11 +35,11 @@ function Points({ title, description, iconPath, idx }: Props) {
     <div
       className={cn(
         "flex flex-col gap-4 py-8 border-primary-foreground border-b",
-        isEven ? "sm:border-r sm:pr-5 md:pr-14" : "lg:border-r sm:pl-5 md:pl-14",
-        idx === 1 && "lg:pr-14",
+        isEven ? "sm:border-r sm:pr-5 md:pr-10" : "lg:border-r sm:pl-5 md:pl-10",
+        idx === 1 && "lg:pr-10",
         idx === 2 && "lg:border-r-0 lg:pl-1",
         idx === 3 && "lg:pl-0",
-        idx === 4 && "lg:border-r lg:pl-14"
+        idx === 4 && "lg:border-r lg:pl-10"
       )}
     >
       <Image

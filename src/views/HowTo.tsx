@@ -9,7 +9,7 @@ import SoonPurchase from "@/assets/images/purchase_soon.png";
 
 function HowTo() {
   return (
-    <section className="py-6 md:py-12 px-5 md:px-14">
+    <section className="py-6 md:py-12 px-5 md:px-10">
       <Button variant="outline" className="rounded-none bg-secondary border-primary-foreground border-b-0 uppercase">
         HOW TO GET STARTED
       </Button>
