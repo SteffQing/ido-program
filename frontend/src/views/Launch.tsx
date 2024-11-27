@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import LaunchIllustration from "@/assets/images/launch.png";
-import _Rocket from "@/assets/svg/rocket.svg";
 import Rocket from "@/assets/svg/rocket";
 
 function Launch() {

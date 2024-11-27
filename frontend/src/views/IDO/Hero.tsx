@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { formatMoney } from "@/lib/utils";
 import Image from "next/image";
 
-interface Props extends Omit<IDOType, "token_info" | "pool_info"> {}
+interface Props extends Omit<IDOType, "token_info" | "pool_info">
 function Hero(props: Props) {
   const progress = Math.round((props.raised / props.target) * 100);
   return (
