@@ -79,10 +79,9 @@ function Participate() {
 
   return (
     <div
-      onClick={sayHello}
       className="w-full p-5 bg-[#0C1F11] cursor-pointer flex justify-center items-center uppercase border border-primary-foreground text-base md:text-xl font-normal font-inter text-primary-foreground"
     >
-      Participate
+      Coming Soon
     </div>
   );
 }

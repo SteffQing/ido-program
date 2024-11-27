@@ -9,7 +9,7 @@ function NoLossIDOsProjects() {
   const [type, setType] = useState<(typeof Statuses)[number]>(Statuses[0]);
   useEffect(() => {
     if (type === "All") {
-      setProjects([idoExample,idoExample,idoExample]);
+      setProjects([idoExample]);
     } else {
       const filteredProjects = [idoExample].filter((project) => project.status === type);
       setProjects(filteredProjects);
