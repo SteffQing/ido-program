@@ -9,7 +9,7 @@ import { formatAddress } from "@/lib/utils";
 const styles = {
   backgroundColor: "transparent",
   border: "1px solid #112C19",
-  padding: "0.5rem",
+  padding: "0.75rem",
   height: "fit-content",
   display: "flex",
   alignItems: "center",
@@ -23,13 +23,13 @@ export default function ConnectButton() {
   return (
     <WalletMultiButton style={styles}>
       {connected ? (
-        <p className="text-sm md:text-xl text-primary-foreground font-normal font-inter">
+        <p className="text-sm md:text-lg text-primary-foreground font-normal font-inter">
           {formatAddress(publicKey?.toBase58() || "")}
         </p>
       ) : (
         <>
           <Image src={WalletIcon} alt="wallet" className="hidden sm:block mr-3" />
-          <p className="text-sm md:text-xl text-primary-foreground font-normal font-inter">
+          <p className="text-sm md:text-lg text-primary-foreground font-normal font-inter">
             {connecting ? "Connecting..." : "Connect Wallet"}
           </p>
         </>

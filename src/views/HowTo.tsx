@@ -13,7 +13,7 @@ function HowTo() {
       <Button variant="outline" className="rounded-none bg-secondary border-primary-foreground border-b-0 uppercase">
         HOW TO GET STARTED
       </Button>
-      <h4 className="font-inter font-semibold text-2xl md:text-4xl border-t border-b border-primary-foreground py-2 capitalize">
+      <h4 className="font-inter font-semibold text-2xl md:text-4xl border-t border-b border-primary-foreground py-2 md:py-4 capitalize">
         Here is how to participate in Web3 IDOs with Greendot
       </h4>
       <aside className="mt-6 mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -54,7 +54,7 @@ function HowTo() {
 
       <aside className="flex flex-col sm:flex-row items-center justify-between gap-12 border border-primary-foreground p-4 md:p-7">
         <div className="flex flex-col gap-4 items-start w-full">
-          <h6>$SOON tokens can be gotten from a faucet for free</h6>
+          <h6 className="text-lg md:text-2xl font-medium font-inter">$SOON tokens can be gotten from a faucet for free</h6>
           <Button variant="outline">Get $SOON</Button>
         </div>
 

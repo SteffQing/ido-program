@@ -26,12 +26,13 @@ function Info(props: Props) {
       </div>
       <div className="w-full flex-1 flex flex-col">
         <div className="flex justify-end">
-        <Button
-          variant="outline"
-          className="rounded-none bg-secondary border-primary-foreground border-b-0 uppercase p-4 h-fit"
-        >
-          <h3 className="text-xl md:text-2xl font-semibold font-inter uppercase">pool information</h3>
-        </Button></div>
+          <Button
+            variant="outline"
+            className="rounded-none bg-secondary border-primary-foreground border-b-0 uppercase p-4 h-fit"
+          >
+            <h3 className="text-xl md:text-2xl font-semibold font-inter uppercase">pool information</h3>
+          </Button>
+        </div>
         <div className="border border-primary-foreground p-4">
           <Points point="Minimum Allocation" data={props.min_alloc} />
           <hr className="border border-primary-foreground my-6" />
@@ -39,9 +40,9 @@ function Info(props: Props) {
           <hr className="border border-primary-foreground my-6" />
           <Points point="Pool Address" data={formatAddress(props.pool_address)} />
           <hr className="border border-primary-foreground my-6" />
-          <Points point="Access Type" data={props.access_type} /> 
+          <Points point="Access Type" data={props.access_type} />
         </div>
-        <div className="border border-primary-foreground border-t-0 w-[98%] p-1" />
+        <div className="border border-primary-foreground border-t-0 w-[98%] p-1 ml-auto" />
       </div>
     </aside>
   );
@@ -51,7 +52,7 @@ interface P_Props {
   point: string;
   data: string | number;
 }
-function Points({ point, data }: P_Props) {
+export function Points({ point, data }: P_Props) {
   return (
     <div className="flex justify-between items-center">
       <p className="text-sm md:text-lg font-normal font-inter">{point}</p>
@@ -60,5 +61,4 @@ function Points({ point, data }: P_Props) {
   );
 }
 
-
-export default Info
+export default Info;

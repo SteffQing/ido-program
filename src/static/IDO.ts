@@ -26,4 +26,6 @@ const idoExample: IDOType = {
   token_info: token_info,
   pool_info: pool_info,
 };
-export { idoExample };
+const Statuses = ["All", "Upcoming", "Live", "Completed"] as const;
+
+export { idoExample, Statuses };

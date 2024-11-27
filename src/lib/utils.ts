@@ -13,3 +13,4 @@ export const formatMoney = (amount: number): string => new Intl.NumberFormat("en
   style: "currency",
   currency: "USD",
 }).format(amount).replace("$", "").replace(".00", "");
+

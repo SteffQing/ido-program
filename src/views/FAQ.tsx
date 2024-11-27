@@ -10,7 +10,7 @@ function FAQ() {
           frequently asked questions
         </Button>
       </div>
-      <h4 className="font-inter font-semibold text-2xl md:text-4xl border-t border-b border-primary-foreground py-2 capitalize text-center">
+      <h4 className="font-inter font-semibold text-2xl md:text-4xl border-t border-b border-primary-foreground py-2 md:py-4 capitalize text-center">
         everything you need to know about greenDot
       </h4>
       <aside className="flex flex-col gap-3 items-center py-8">

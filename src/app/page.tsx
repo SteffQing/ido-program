@@ -1,3 +1,4 @@
+import NoLossIDOsProjects from "@/components/NoLossIDO";
 import FAQ from "@/views/FAQ";
 import Hero from "@/views/Hero";
 import HowTo from "@/views/HowTo";
@@ -7,6 +8,7 @@ import WhyUs from "@/views/WhyUs";
 export default function Home() {
 	return <main className="pt-14">
 		<Hero />
+		<NoLossIDOsProjects	/>
 		<WhyUs />
 		<HowTo />
 		<FAQ />

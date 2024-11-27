@@ -17,7 +17,7 @@ function Launch() {
           />
         </div>
         <div className="flex flex-col gap-4 w-full items-end">
-          <h6 className="uppercase text-2xl md:text-3xl font-semibold font-inter text-right">Are You a Web3 Project Looking to get Launched on Greendot?</h6>
+          <h6 className="uppercase text-2xl md:text-3xl font-semibold font-inter text-right max-w-[600px]">Are You a Web3 Project Looking to get Launched on Greendot?</h6>
           <Button>
             <Rocket />
            Apply Here

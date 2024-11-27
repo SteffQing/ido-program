@@ -9,14 +9,14 @@ function WhyUs() {
       <Button variant="outline" className="rounded-none bg-secondary border-primary-foreground border-b-0 uppercase">
         Why choose us
       </Button>
-      <h4 className="font-inter font-semibold text-2xl md:text-4xl border-t border-b border-primary-foreground py-2 capitalize">
+      <h4 className="font-inter font-semibold text-2xl md:text-4xl border-t border-b border-primary-foreground py-2 md:py-4 capitalize">
         Here is why we are the best launchpad for your web3 Projects
       </h4>
       <aside className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:bg-[url('/steps.png')] bg-contain bg-right-bottom bg-no-repeat">
         {POINTS.map((point, index) => (
           <Points key={index} {...point} idx={index} />
         ))}
-        <div className="hidden sm:flex flex-col gap-4 py-8 border-primary-foreground border-b sm:pl-5 md:pl-14" />
+        <div className="hidden sm:flex flex-col gap-4 py-8 border-primary-foreground border-b sm:pl-5 md:pl-14"  id="how-to" />
       </aside>
     </section>
   );
@@ -37,7 +37,7 @@ function Points({ title, description, iconPath, idx }: Props) {
         "flex flex-col gap-4 py-8 border-primary-foreground border-b",
         isEven ? "sm:border-r sm:pr-5 md:pr-10" : "lg:border-r sm:pl-5 md:pl-10",
         idx === 1 && "lg:pr-10",
-        idx === 2 && "lg:border-r-0 lg:pl-1",
+        idx === 2 && "lg:border-r-0 lg:pl-10",
         idx === 3 && "lg:pl-0",
         idx === 4 && "lg:border-r lg:pl-10"
       )}
