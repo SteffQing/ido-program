@@ -1,11 +1,10 @@
-import { SOON_DEVNET_RPC } from "@/constants";
+import { PROGRAM_ID, SOON_DEVNET_RPC } from "@/constants";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { Connection, PublicKey, SystemProgram, Transaction, TransactionInstruction } from "@solana/web3.js";
 
 function Participate() {
   const { publicKey, sendTransaction, connect, connected, connecting } = useWallet();
-  const programId = new PublicKey(
-    "7qhC7bD9cDV9LTwjgVmGJHs5rGtrMY4pSBw1KswuaBfk" // change this to your program ID
+  const programId = new PublicKey(PROGRAM_ID
   );
   const connection = new Connection(SOON_DEVNET_RPC);
   const GREETING_SIZE = 4; // (4 bytes for u32)
